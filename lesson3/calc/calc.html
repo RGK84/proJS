@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" id="form">
+    <fieldset>
+        <legend>Редактор гамбургера</legend>
+        <div class="row">
+            <p>Выбери размер</p>
+            <div class="radio-variant">
+                <label><input type="radio" name="size" value="sizeSmall" checked />Маленький</label>
+            </div>
+            <div class="radio-variant">
+                <label><input type="radio" name="size" value="sizeBig" />Большой</label>
+            </div>
+        </div>
+        <div class="row additions">
+            <p>Выбери начинку</p>
+            <div class="radio-variant">
+                <label><input type="radio" name="stuff" value="stuffingCheese" checked/>Сыр</label>
+            </div>
+            <div class="radio-variant">
+                <label><input type="radio" name="stuff" value="stuffingSalad" />Салат</label>
+            </div>
+            <div class="radio-variant">
+                <label><input type="radio" name="stuff" value="stuffingPotato" />Картофель</label>
+            </div>
+        </div>
+        <div class="row additions">
+            <p>Хотите еще вкуснее?</p>
+            <div class="checkbox-variant">
+                <label><input type="checkbox" name="toppings" value="toppingSpice" />Посыпать приправами</label>
+            </div>
+            <div class="checkbox-variant">
+                <label><input type="checkbox" name="toppings" value="toppingMayonnaise" />Полить майонезом</label>
+            </div>
+
+        </div>
+    </fieldset>
+    <br />
+    <div id="result">
+        <div><b>Стоимость:</b> <span id="price">0</span> рублей</div>
+        <div><b>Калорийность:</b> <span id="calories">0</span> кКал</div>
+    </div>
+</form>
+    <script src="calc.js"></script>
+ 
+</body>
+ 
+</html>
